@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Easy Quiz</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital@1&display=swap" rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/93b9f82d17.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+	<div class="container topBanner">
+		<div class="row">
+			<div class="col-8">
+				<h1>Name That Critter</h1>
+			</div>
+
+			<div class="col-2">
+				<i class="fas fa-paw paw"></i>
+			</div>
+
+			<div class="col-2 topBtns">
+				<a href="loading.html">
+					<button class="btn btn-dark btnEasy">Easy Quiz</button>
+				</a>
+
+				<a href="loadinghard.html">
+					<button class="btn btn-dark btnHard">Hard Quiz</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 questionBground">
+
+				<form>
+					<p>
+						<label class="form-label">
+							<i class="fas fa-dog dogIcon"></i>
+						</label>
+
+						<input class="form-control" type="text" id="answer1" placeholder="Type your answer here">
+						<div id="grade1"></div>
+					</p>
+
+					<p>
+						<label class="form-label">
+							<i class="fas fa-cat catIcon"></i>
+						</label>
+						<input class="form-control" type="text" id="answer2" placeholder="Type your answer here">
+						<div id="grade2"></div>
+					</p>
+
+					<p>
+						<label class="form-label">
+							<i class="fas fa-frog frogIcon"></i>
+						</label>
+						<input class="form-control" type="text" id="answer3" placeholder="Type your answer here">
+						<div id="grade3"></div>
+					</p>
+
+					<p>
+						<label class="form-label">
+							<i class="fas fa-horse horseIcon"></i>
+						</label>
+						<input class="form-control" type="text" id="answer4" placeholder="Type your answer here">
+						<div id="grade4"></div>
+					</p>
+
+					<p>
+						<label class="form-label">
+							<i class="fas fa-fish fishIcon"></i>
+						</label>
+						<input class="form-control" type="text" id="answer5" placeholder="Type your answer here">
+						<div id="grade5"></div>
+					</p>
+				</form>
+
+				<p>
+					<button id="checkAnswers" class="btn btn-primary">Check Answers</button>
+
+					<button id="resetForm" class="btn btn-secondary">Reset Form</button>
+				</p>
+			</div>
+		</div>
+	</div>
+
+<!--
+	<div class="top_banner">
+		<i class="fas fa-candy-cane cane"></i>
+		<p>Text.</p>
+	</div>
+-->
+
+	<script>
+		
+		document.getElementById("checkAnswers").addEventListener('click', checkAnswer);
+		document.getElementById("resetForm").addEventListener('click', resetForm);
+
+		function checkAnswer() {
+			let answers = ['dog', 'cat', 'frog', 'horse', 'fish'];
+
+			for (var i = 0; i < answers.length; i++) {
+
+				let fieldId = i + 1;
+
+				let answer = document.getElementById('answer' + fieldId).value;
+
+				let grade = document.getElementById('grade' + fieldId);
+
+				if (answer == answers[i]) {
+					//it's correct
+					grade.innerHTML = '<i class="fas fa-check correct"><i>'
+				}
+				else {
+					//it's incorrect
+					grade.innerHTML = '<i class="fas fa-times wrong"></i>'
+				}
+			}
+		}
+		function resetForm() {
+
+			document.getElementById('answer1').value = '';
+			document.getElementById('grade1').innerHTML = '';
+
+			document.getElementById('answer2').value = '';
+			document.getElementById('grade2').innerHTML = '';
+
+			document.getElementById('answer3').value = '';
+			document.getElementById('grade3').innerHTML = '';
+
+			document.getElementById('answer4').value = '';
+			document.getElementById('grade4').innerHTML = '';
+
+			document.getElementById('answer5').value = '';
+			document.getElementById('grade5').innerHTML = '';
+		}
+
+	</script>
+</body>
+</html>

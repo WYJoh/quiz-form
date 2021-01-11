@@ -1,0 +1,227 @@
+body {
+	background-color: #DEAF84 /*#FFC69B*/;
+}
+.topBanner {
+	padding: 1em 0 1em 0;
+	border-style: ridge;
+	border-width: 7px;
+	border-color: #A44200;
+	margin-bottom: 1em;
+	background-color: #F2F3AE;
+}
+h1 {
+	font-family: 'Bodoni Moda', serif;
+	font-size: 80px;
+	text-align: center;
+	color: #A44200;
+}
+.paw {
+	/*color: #D58936;*/
+	color: #DA5700;
+	font-size: 100px;
+	margin-left: 50px;
+}
+.btnEasy {
+	background-color: #FF6600;
+	border-color: #A44200;
+	margin-top: 5px;
+}
+.btnHard {
+	background-color: #A94400;
+	border-color: #A44200;
+	margin-top: 10px;
+}
+.topBtns {
+	text-align: center;
+}
+/*
+.top_banner {
+	border-width: 2em;
+	border-color: black;
+}
+.cane {
+	color: red;
+}
+*/
+.questionBground {
+	text-align: center;
+}
+
+/* Body Icons */
+.dogIcon {
+	color: #3C1518;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.catIcon {
+	color: #DCB82C;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.frogIcon {
+	color: #1D4D0B;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.horseIcon {
+	color: #C5681B;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.fishIcon {
+	color: #0F4384;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.spiderIcon {
+	color: #3E393F;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.crabIcon {
+	color: #920707;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.hippoIcon {
+	color: #6B187C;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.otterIcon {
+	color: #AA621F;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+.dragonIcon {
+	color: #D23939;
+	background-color: white;
+	font-size: 100px;
+	border-style: outset;
+	border-width: 4px;
+	border-radius: 10px;
+	border-color: #A44200;
+	padding: 8px;
+}
+
+.form-control {
+	width: 30%;
+	margin: auto;
+}
+
+/* Script */
+.correct {
+	color: blue;
+}
+.wrong {
+	color: red;
+}
+
+/* Loading Animations */
+.paw1 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 40%;
+	left: 40%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 0s;
+}
+.paw2 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 45%;
+	left: 44%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 0.8s;
+}
+.paw3 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 40%;
+	left: 48%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 1.6s;
+}
+.paw4 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 45%;
+	left: 52%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 2.4s;
+}
+.paw5 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 40%;
+	left: 56%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 3.2s;
+}
+.paw6 {
+	color: #DA5700;
+	font-size: 40px;
+	top: 45%;
+	left: 60%;
+	position: fixed;
+	transform: rotate(90deg);
+	animation-delay: 4s;
+}
+h2 {
+	font-family: 'Bodoni Moda', serif;
+	font-size: 20px;
+	color: #A44200;
+	top: 55%;
+	left: 45%;
+	position: fixed;
+}
